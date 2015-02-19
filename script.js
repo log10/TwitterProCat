@@ -45,6 +45,7 @@ $(document).ready(function(){
 		$.ajax({
 			url : initUrl,
 			type : 'GET',
+			crossDomain: true,
 			headers: {
             	"Authorization": 'OAuth oauth_consumer_key="'+consumerKey+'", oauth_nonce=' + nonce + ', oauth_signature=' + encodedSig + ', oauth_signature_method="HMAC-SHA1", oauth_timestamp=' + timestamp + ',oauth_token="'+accessToken+'", oauth_version="1.0"'
         	},
