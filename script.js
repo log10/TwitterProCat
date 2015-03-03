@@ -6,10 +6,10 @@ $(document).ready(function(){
 			return false;
 		}
 		var initUrl="https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name="+$("#name").val()+"&count=100&truncated=false";
-		var consumerKey="aCjf9TD9jKKlNDLIBwF5IMXXm";
-		var consumerSecret="ibavho8Tb2VNKotmSB1MCXF141EasyzF3DQ5g40FPrtVKOQrYJ";
-		var accessToken="1419954582-jzNubfOM7XrInHjGsrPHs1QaeCMgVPBlZ33R04n";
-		var accessTokenSecret="vIp0aEiZPl9pbSiFGPsSOwGqw4yBNeGrypbVwahnSpsWg";
+		var consumerKey="";
+		var consumerSecret="";
+		var accessToken="";
+		var accessTokenSecret="";
 		var nonce=exports.nonce(32);
 		var ts=Math.floor(new Date().getTime()/1000);
 		var timestamp=ts.toString();
